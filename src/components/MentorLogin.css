@@ -30,22 +30,24 @@ body {
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(20px);
   border-radius: 20px;
-  padding: 40px 30px;
-  width: 350px;
+  padding: 60px 30px 60px 30px;
+  width: 600px;
+  height: 600px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   text-align: center;
+ 
 }
 
 /* Title and Headings */
 .login-title {
-  font-size: 28px;
+  font-size: 48px;
   font-weight: bold;
   color: #ffffff;
   margin-bottom: 5px;
 }
 
 .login-heading {
-  font-size: 22px;
+  font-size: 32px;
   color: #bad9f5;
   margin-bottom: 20px;
 }
@@ -59,7 +61,7 @@ body {
 
 .login-label {
   text-align: left;
-  font-size: 14px;
+  font-size: 24px;
   color: #ffffff;
 }
 
@@ -97,7 +99,7 @@ body {
 }
 
 .signup-prompt {
-  font-size: 12px;
+  font-size: 19px;
   color: #ffffff;
   margin-top: 20px;
 }
