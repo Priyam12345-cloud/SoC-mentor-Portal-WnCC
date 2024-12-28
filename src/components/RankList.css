@@ -1,0 +1,71 @@
+/* Page Container */
+.rank-list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(
+    to right,
+    #f1f2f3,
+    #f1f2f3
+  ); /* Blue gradient #0052cc  #002244*/
+  padding: 20px;
+  text-align: center;
+}
+
+/* Title */
+.rank-list-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0052cc;
+  margin-bottom: 2rem;
+}
+
+/* Rank List */
+.rank-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 600px; /* Centered and responsive */
+}
+
+/* Rank List Item */
+.rank-list-item {
+  background: rgba(11, 27, 146, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: #1b1b9e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover Effect for List Item */
+.rank-list-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Buttons */
+.rank-list-buttons button {
+  background: #0052cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.rank-list-buttons button:hover {
+  background: #003d99;
+  transform: scale(1.05);
+}

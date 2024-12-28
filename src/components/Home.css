@@ -1,0 +1,80 @@
+/* Home Container */
+.home-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Video Background */
+.home-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Shadow Box for Content */
+.shadow-box {
+  background: rgba(0, 0, 0, 0.2); /* Semi-transparent black */
+  backdrop-filter: blur(10px); /* Blur for frosted glass effect */
+  padding: 40px 60px;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 1;
+}
+
+/* Title Styling */
+.home-title {
+  font-size: 4rem;
+  color: white;
+  margin-bottom: 2rem;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+/* Buttons Container */
+.home-buttons {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+}
+
+/* Button Styling */
+.home-button {
+  background: #0f9b92; /* Sea greenish shade */
+  color: rgb(199, 208, 207);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  cursor: pointer;
+}
+
+.home-button:hover .stars {
+  filter: drop-shadow(0 0 10px #fffdef);
+  display: block;
+  background: #27ae60; /* Darker sea green on hover */
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Fade-in Animation */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

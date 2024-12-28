@@ -1,0 +1,110 @@
+/* Page Container */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-image: url("/images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  padding: 20px;
+}
+
+/* Form Card */
+.register-card {
+  background: rgba(255, 255, 255, 0.15); /* Frosted glass effect */
+  backdrop-filter: blur(10px);
+  padding: 3rem 2rem; /* Increased padding for spacing */
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 0;
+}
+
+/* Title */
+.register-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+/* Input Fields */
+.register-input {
+  width: calc(100% - 20px); /* Ensure proper alignment with padding */
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  color: #ffffff;
+  text-align: left;
+}
+
+.register-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.register-input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+/* Description Box */
+.description {
+  height: 100px;
+  resize: none;
+}
+
+/* Submit Button */
+.register-button {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  color: white;
+  background: #002244; /* Matches the login button */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.register-button:hover {
+  background: #00162e; /* Darker shade on hover */
+  transform: scale(1.05);
+}
+
+/* Login Link */
+.login-link {
+  margin-top: 1.5rem;
+}
+
+.login-link p {
+  margin: 0;
+  color: #ffffff;
+}
+
+.login-button {
+  background: transparent;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.login-button:hover {
+  background: #ffffff;
+  color: #000;
+}
